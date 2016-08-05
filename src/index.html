@@ -11,11 +11,10 @@
 
     <title>Scrolling Nav - Start Bootstrap Template</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,7 +71,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page,
+                        give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
                 </div>
             </div>
@@ -112,15 +112,37 @@
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- build:js scripts/plugins.js -->
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
 
-    <!-- Scrolling Nav JavaScript -->
+    <!-- build:js scripts/validator.js -->
+    <script src="js/bootstrapValidator.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="js/main.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <!-- endbuild -->
+
 
 </body>
 
