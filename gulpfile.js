@@ -12,8 +12,10 @@ gulp.task('styles', function(){
     browsers: ['last 2 versions']
   }))
   .pipe(gulp.dest('src/css'))
-  .pipe(gulp.dest('dist/css'))
   .pipe(browserSync.stream());
+
+  gulp.src('src/css/**/*.css')
+  .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('scripts', function(){
@@ -48,6 +50,14 @@ gulp.task('serve', ['styles'], function(){
   gulp.watch('src/js/*.js').on('change', browserSync.reload);
 });
 
+gulp.task('serve:dist', function(){
+  browserSync.init({
+    port:8881,
+    server: {
+      baseDir: ['dist']
+    }
+  });
+});
 // This task to empty the dist folder
 gulp.task('clean', function(){
   return del(['dist/**/*']);
