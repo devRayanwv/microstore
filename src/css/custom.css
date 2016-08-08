@@ -33,7 +33,7 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #2C3E50;
     color: #eee;
@@ -42,6 +42,7 @@ of those sections to manage the look and feel of the site. */
 .about-section {
     height: 100%;
     padding-top: 150px;
+    margin-bottom: 150px;
     text-align: center;
     background: #eee;
 }
@@ -93,4 +94,64 @@ of those sections to manage the look and feel of the site. */
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/* OWL */
+.owl-carousel {
+position: relative;
+}
+.owl-prev,
+.owl-next {
+position: absolute;
+top: 50%;
+margin-top: -10px; // Half of the prev/next buttons height here in negatives to center them perfectly
+}
+
+.owl-prev {
+left: 0;
+margin-left:5px;
+}
+.owl-next {
+right: 0;
+margin-right:5px;
+}
+
+.product {
+  background: #fff;
+  color:#2C3E50;
+  margin-top:25px;
+  padding:10px 20px;
+}
+
+.product-item {
+  padding:10px;
+  margin:3px;
+  background:#eee;
+  display: flex;
+  flex-direction: column;
+}
+.product-item-img {
+  border: 2px dashed black;
+}
+
+.product-item-title {
+  margin: 5px;
+  font-size: 1em;
+}
+.product-item-footer
+{
+  display: flex;
+}
+
+.addToCart {
+  flex:1;
+  text-align:left;
+}
+
+.price {
+  flex:1;
+  text-align:right;
+  align-self: center;
+  color:#d62c1a;
+  font-size: 1em;
 }

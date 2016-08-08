@@ -6,16 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="MicroStore Laravel App">
+    <meta name="author" content="Rayan Alamer">
 
     <title>Scrolling Nav - Start Bootstrap Template</title>
 
-    <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="../bower_components/aos/dist/aos.css" />
-    <!-- endbuild -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.green.min.css">
@@ -25,8 +21,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bower_components/aos/dist/aos.css" />
+    <!-- endbuild -->
 
 </head>
+
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
@@ -75,10 +77,9 @@
                 <div class="col-md-12">
                     <h1 class="tagline"><span id="typed"></span></h1>
                 </div>
-                <a href="#about" class="page-scroll btn btn-default">Check out our Product</a>
             </div>
             <!-- End of the row -->
-        </div>
+
     </section>
 
     <!-- About Section -->
@@ -86,83 +87,74 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                  <h1>About Section</h1>
                 </div>
             </div>
             <div class="row">
+              <div class="col-md-12">
+                <div class="owl-carousel product">
 
-
-                <div class="col-md-8 col-md-offset-2">
-                    <!-- Owl carousel block starts -->
-                    <!-- Owl navigation -->
-                    <div class="owl-nav">
-                        <a class="owl-nav-prev"><i class="fa fa-chevron-left"></i></a>
-                        <a class="owl-nav-next"><i class="fa fa-chevron-right"></i></a>
+                  <div class="product-item">
+                    <div class="product-item-img">
+                      <img src="/img/1.jpg" class="img-responsive"  />
                     </div>
-                    <!-- Change values of data-items, data-auto-play, data-pagination & data-single-item  based on your needs -->
-                    <div class="owl-carousel">
-                        <!-- Carousel item -->
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/1.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/2.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/3.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/4.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/5.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/6.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/7.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
-                        <div class="owl-content item">
-                            <a href="#"><img src="img/8.jpg" alt="" class="img-responsive img-thumbnail" /></a>
-                            <h4><a href="#">Some heading here now</a></h4>
-                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
-                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                            <a href="#" class="btn btn-red btn-xs">Read more</a>
-                        </div>
+                    <div class="product-item-title">Product1</div>
+                    <div class="product-item-footer">
+                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                      <span class="price">$100</span>
                     </div>
-                    <!-- Owl carousel block ends -->
+                  </div> <!-- End of product-item -->
 
-                </div>
+                  <div class="product-item">
+                    <div class="product-item-img">
+                      <img src="/img/2.jpg" class="img-responsive"  />
+                    </div>
+                    <div class="product-item-title">Product1</div>
+                    <div class="product-item-footer">
+                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                      <span class="price">$400</span>
+                    </div>
+                  </div> <!-- End of product-item -->
+
+                  <div class="product-item">
+                    <div class="product-item-img">
+                      <img src="/img/3.jpg" class="img-responsive"  />
+                    </div>
+                    <div class="product-item-title">Product1</div>
+                    <div class="product-item-footer">
+                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                      <span class="price">$10</span>
+                    </div>
+                  </div> <!-- End of product-item -->
+
+
+                  <div class="product-item">
+                    <div class="product-item-img">
+                      <img src="/img/4.jpg" class="img-responsive"  />
+                    </div>
+                    <div class="product-item-title">Product1</div>
+                    <div class="product-item-footer">
+                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                      <span class="price">$75</span>
+                    </div>
+                  </div> <!-- End of product-item -->
+
+
+                  <div class="product-item">
+                    <div class="product-item-img">
+                      <img src="/img/6.jpg" class="img-responsive"  />
+                    </div>
+                    <div class="product-item-title">Product1</div>
+                    <div class="product-item-footer">
+                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                      <span class="price">$150</span>
+                    </div>
+                  </div> <!-- End of product-item -->
+
+                </ul>
+              </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -226,6 +218,7 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             nav: true,
+            navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
             responsive: {
                 0: {
                     items: 1
