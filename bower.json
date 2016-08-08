@@ -18,5 +18,9 @@
     "bootstrap-sass": "^3.3.6",
     "modernizr": "^3.3.1",
     "font-awesome": "fontawesome#^4.6.3"
+  },
+  "devDependencies": {
+    "typed.js": "^1.1.4",
+    "aos": "^2.0.4"
   }
 }

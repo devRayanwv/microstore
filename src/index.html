@@ -14,6 +14,7 @@
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="css/main.css">
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bower_components/aos/dist/aos.css" />
     <!-- endbuild -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
@@ -70,43 +71,103 @@
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
-            <div class="row owl-carousel owl-theme">
-                    <div class="col-md-12 item">
-                        <h1>Scrolling Nav</h1>
-                    </div>
-                    <div class="item">
-                        <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page,
-                            give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                        <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="btn btn-default">Default</a>
-                        <a href="#" class="btn btn-primary">Primary</a>
-                        <a href="#" class="btn btn-success">Success</a>
-                        <a href="#" class="btn btn-info">Info</a>
-                        <a href="#" class="btn btn-warning">Warning</a>
-                        <a href="#" class="btn btn-danger">Danger</a>
-                    </div>
-                    <div class="item">
-                        <h4>1</h4></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="tagline"><span id="typed"></span></h1>
+                </div>
+                <a href="#about" class="page-scroll btn btn-default">Check out our Product</a>
             </div>
-        </div>
+            <!-- End of the row -->
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>About Section</h1>
                 </div>
             </div>
+            <div class="row">
+
+
+                <div class="col-md-8 col-md-offset-2">
+                    <!-- Owl carousel block starts -->
+                    <!-- Owl navigation -->
+                    <div class="owl-nav">
+                        <a class="owl-nav-prev"><i class="fa fa-chevron-left"></i></a>
+                        <a class="owl-nav-next"><i class="fa fa-chevron-right"></i></a>
+                    </div>
+                    <!-- Change values of data-items, data-auto-play, data-pagination & data-single-item  based on your needs -->
+                    <div class="owl-carousel">
+                        <!-- Carousel item -->
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/1.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/2.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/3.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/4.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/5.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/6.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/7.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                        <div class="owl-content item">
+                            <a href="#"><img src="img/8.jpg" alt="" class="img-responsive img-thumbnail" /></a>
+                            <h4><a href="#">Some heading here now</a></h4>
+                            <small><i class="fa fa-calendar"></i>&nbsp; 25-2-2014 &nbsp; <i class="fa fa-comments"></i>&nbsp; 24 Comments</small>
+                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
+                            <a href="#" class="btn btn-red btn-xs">Read more</a>
+                        </div>
+                    </div>
+                    <!-- Owl carousel block ends -->
+
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -117,7 +178,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -156,25 +217,53 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="../bower_components/typed.js/js/typed.js"></script>
+    <script src="js/typed-custom.js"></script>
+    <script src="../bower_components/aos/dist/aos.js"></script>
     <!-- endbuild -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
-            margin: 10,
-            singleItem: true,
             nav: true,
             responsive: {
                 0: {
                     items: 1
                 },
                 600: {
-                    items: 1
+                    items: 3
                 },
                 1000: {
-                    items: 1
+                    items: 3
                 }
             }
+
+        });
+        /* Own navigation */
+        $(".owl-nav-prev").click(function() {
+            $(this).parent().next(".owl-carousel").trigger('owl.prev');
+        });
+        $(".owl-nav-next").click(function() {
+            $(this).parent().next(".owl-carousel").trigger('owl.next');
+        });
+
+        $("#typed").typed({
+            strings: ["MicroStore + Laravel", "Light & Simple", "MicroStore easy to use."],
+            typeSpeed: 100,
+            callback: function() {
+                lift();
+            }
+        });
+
+        function lift() {
+            $(".head-text").addClass("lift-text");
+        };
+
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
         });
     </script>
 </body>

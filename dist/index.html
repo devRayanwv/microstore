@@ -12,7 +12,9 @@
     <title>Scrolling Nav - Start Bootstrap Template</title>
 
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.green.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,14 +67,27 @@
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page,
-                        give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                </div>
+            <div class="row owl-carousel owl-theme">
+                    <div class="col-md-12 item">
+                        <h1>Scrolling Nav</h1>
+                    </div>
+                    <div class="item">
+                        <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page,
+                            give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                        <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-default">Default</a>
+                        <a href="#" class="btn btn-primary">Primary</a>
+                        <a href="#" class="btn btn-success">Success</a>
+                        <a href="#" class="btn btn-info">Info</a>
+                        <a href="#" class="btn btn-warning">Warning</a>
+                        <a href="#" class="btn btn-danger">Danger</a>
+                    </div>
+                    <div class="item">
+                        <h4>1</h4></div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -116,8 +131,26 @@
     <script src="scripts/validator.js"></script>
 
     <script src="scripts/main.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            singleItem: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
