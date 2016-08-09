@@ -155,13 +155,3 @@ margin-right:5px;
   color:#d62c1a;
   font-size: 1em;
 }
-.cartStatus {
-  display: flex;
-  justify-content: center;
-}
-.bracket {
-  font-size: 40px;
-}
-.cartStatus-text {
-  align-self: center
-}

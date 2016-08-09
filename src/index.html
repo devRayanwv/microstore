@@ -87,74 +87,79 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                  <h1>About Section</h1>
+                    <h1>About Section</h1>
                 </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="owl-carousel product">
+                <div class="col-lg-12">
 
-                  <div class="product-item">
-                    <div class="product-item-img">
-                      <img src="/img/1.jpg" class="img-responsive"  />
-                    </div>
-                    <div class="product-item-title">Product1</div>
-                    <div class="product-item-footer">
-                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
-                      <span class="price">$100</span>
-                    </div>
-                  </div> <!-- End of product-item -->
-
-                  <div class="product-item">
-                    <div class="product-item-img">
-                      <img src="/img/2.jpg" class="img-responsive"  />
-                    </div>
-                    <div class="product-item-title">Product1</div>
-                    <div class="product-item-footer">
-                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
-                      <span class="price">$400</span>
-                    </div>
-                  </div> <!-- End of product-item -->
-
-                  <div class="product-item">
-                    <div class="product-item-img">
-                      <img src="/img/3.jpg" class="img-responsive"  />
-                    </div>
-                    <div class="product-item-title">Product1</div>
-                    <div class="product-item-footer">
-                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
-                      <span class="price">$10</span>
-                    </div>
-                  </div> <!-- End of product-item -->
-
-
-                  <div class="product-item">
-                    <div class="product-item-img">
-                      <img src="/img/4.jpg" class="img-responsive"  />
-                    </div>
-                    <div class="product-item-title">Product1</div>
-                    <div class="product-item-footer">
-                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
-                      <span class="price">$75</span>
-                    </div>
-                  </div> <!-- End of product-item -->
-
-
-                  <div class="product-item">
-                    <div class="product-item-img">
-                      <img src="/img/6.jpg" class="img-responsive"  />
-                    </div>
-                    <div class="product-item-title">Product1</div>
-                    <div class="product-item-footer">
-                      <span class="addToCart"><a class="btn btn-xs btn-success">Add to Cart</a></span>
-                      <span class="price">$150</span>
-                    </div>
-                  </div> <!-- End of product-item -->
-
-                </ul>
+                <div class="cartStatus">
+                  <span class="bracket">{</span>
+                  <span class="cartStatus-text">No Items in shopping cart. </span>
+                  <span class="bracket">}</span>
+                </div>
               </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel product">
+                        <div class="product-item">
+                            <div class="product-item-img">
+                                <img src="/img/1.jpg" class="img-responsive" />
+                            </div>
+                            <div class="product-item-title">Product1</div>
+                            <div class="product-item-footer">
+                                <span class="addToCart" id="product1"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                                <span class="price">$100</span>
+                            </div>
+                        </div>
+                        <!-- End of product-item -->
+                        <div class="product-item">
+                            <div class="product-item-img">
+                                <img src="/img/2.jpg" class="img-responsive" />
+                            </div>
+                            <div class="product-item-title">Product2</div>
+                            <div class="product-item-footer">
+                                <span class="addToCart" id="product2"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                                <span class="price">$400</span>
+                            </div>
+                        </div>
+                        <!-- End of product-item -->
+                        <div class="product-item">
+                            <div class="product-item-img">
+                                <img src="/img/3.jpg" class="img-responsive" />
+                            </div>
+                            <div class="product-item-title">Product3</div>
+                            <div class="product-item-footer">
+                                <span class="addToCart"  id="product3"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                                <span class="price">$10</span>
+                            </div>
+                        </div>
+                        <!-- End of product-item -->
+                        <div class="product-item">
+                            <div class="product-item-img">
+                                <img src="/img/4.jpg" class="img-responsive" />
+                            </div>
+                            <div class="product-item-title">Product4</div>
+                            <div class="product-item-footer">
+                                <span class="addToCart" id="product4"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                                <span class="price">$75</span>
+                            </div>
+                        </div>
+                        <!-- End of product-item -->
+                        <div class="product-item">
+                            <div class="product-item-img">
+                                <img src="/img/6.jpg" class="img-responsive" />
+                            </div>
+                            <div class="product-item-title">Product5</div>
+                            <div class="product-item-footer">
+                                <span class="addToCart" id="product5"><a class="btn btn-xs btn-success">Add to Cart</a></span>
+                                <span class="price">$150</span>
+                            </div>
+                        </div>
+                        <!-- End of product-item -->
+                    </div>
+                </div>
+            </div> <!-- END of row -->
+
         </div>
     </section>
 
@@ -206,19 +211,19 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="js/main.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <script src="../bower_components/typed.js/js/typed.js"></script>
     <script src="js/typed-custom.js"></script>
     <script src="../bower_components/aos/dist/aos.js"></script>
+    <script src="js/main.js"></script>
     <!-- endbuild -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             nav: true,
-            navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
+            navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
             responsive: {
                 0: {
                     items: 1
@@ -231,13 +236,6 @@
                 }
             }
 
-        });
-        /* Own navigation */
-        $(".owl-nav-prev").click(function() {
-            $(this).parent().next(".owl-carousel").trigger('owl.prev');
-        });
-        $(".owl-nav-next").click(function() {
-            $(this).parent().next(".owl-carousel").trigger('owl.next');
         });
 
         $("#typed").typed({
