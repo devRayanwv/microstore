@@ -23,6 +23,7 @@ $(document.body).on('click', '.addToCart', function(){
       $('.cartStatus-text').fadeIn("slow");
       $('#'+id + ' a').addClass('btn-success');
       $('#'+id + ' a').removeClass('btn-danger');
+      $('#'+id + ' a').text('Add to Cart');
     }
   }
 
@@ -41,6 +42,7 @@ $(document.body).on('click', '.addToCart', function(){
     $('.cartStatus-text').append("<a style='margin-left:5px;' class='btn btn-xs btn-warning'>Check out</a>");
 
     $('#'+id + ' a').addClass('btn-danger');
+    $('#'+id + ' a').text('Remove');
     $('#'+id + ' a').removeClass('btn-success');
   }
 });
