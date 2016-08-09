@@ -1,21 +1,23 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
 var useref = require('gulp-useref');
 var browserSync = require('browser-sync').create();
 var del = require('del');
+var postcss = require('gulp-postcss');
+var atImport = require('postcss-import');
+
 
 gulp.task('styles', function(){
-  gulp.src('src/sass/**/*.scss')
-  .pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions']
-  }))
+  var processor = [
+    atImport,
+    autoprefixer({browsers: ['last 2 version']}),
+  ];
+  gulp.src('src/postcss/custom.css')
+  .pipe(postcss(processor))
   .pipe(gulp.dest('src/css'))
+  .pipe(gulp.dest('dist/css'))
   .pipe(browserSync.stream());
-
-  gulp.src('src/css/**/*.css')
-  .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('scripts', function(){
@@ -28,7 +30,7 @@ gulp.task('useref', function(){
   .pipe(gulp.dest('dist'))
 });
 gulp.task('fonts', function(){
-  return gulp.src(['bower_components/bootstrap-sass/assets/fonts/bootstrap/**.*',
+  return gulp.src(['bower_components/bootstrap/dist/fonts/**.*',
   'bower_components/font-awesome/fonts/**.*'
 ])
     .pipe(gulp.dest('dist/fonts'))
@@ -45,7 +47,8 @@ gulp.task('serve', ['styles'], function(){
       }
     }
   });
-  gulp.watch('src/sass/**/*.scss', ['styles']);
+  gulp.watch('src/postcss/*.css', ['styles']);
+  gulp.watch('src/postcss/**/*.css', ['styles']);
   gulp.watch('src/*.html').on('change', browserSync.reload);
   gulp.watch('src/js/*.js').on('change', browserSync.reload);
 });

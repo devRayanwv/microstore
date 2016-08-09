@@ -1,10 +1,13 @@
 {
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
     "browser-sync": "^2.13.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
-    "gulp-useref": "^3.1.0"
+    "gulp-useref": "^3.1.0",
+    "postcss-import": "^8.1.2"
   }
 }

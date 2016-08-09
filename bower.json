@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "typed.js": "^1.1.4",
-    "aos": "^2.0.4"
+    "aos": "^2.0.4",
+    "bootstrap": "^3.3.7"
   }
 }

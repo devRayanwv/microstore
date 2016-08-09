@@ -1,6 +1,5 @@
 var cart = [];
-
-$(".addToCart").click(function() {
+$(document.body).on('click', '.addToCart', function(){
   var id = this.id;
   var flaq = 1;
   for (var i = 0; i < cart.length; i++) {
